@@ -1,0 +1,7 @@
+*.o
+.breakpoints
+.cache
+.ccls-cache
+.ccls-cache
+replit.nix
+.replit
