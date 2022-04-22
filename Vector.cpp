@@ -92,7 +92,7 @@ void Vector::insert(const Value& value, size_t pos) {
 
 void Vector::insert(const Value* values, size_t size, size_t pos) {
     if (_capacity < _size + size) {
-        reserve((round((_size + size)/ _multiplicativeCoef) + 1)* _multiplicativeCoef);
+        reserve((round((_size + size) / _multiplicativeCoef) + 1) * _multiplicativeCoef);
     }
     for (auto i = 0; i < size; i++) {
         insert(values[i], pos + i);
